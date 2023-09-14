@@ -12,9 +12,9 @@ sc config XblGameSave start=disabled
 timeout /t 5 /nobreak > nul
 
 :: Iniciar los servicios de Xbox Game Pass
-sc config XboxNetApiSvc start=auto
-sc config XblAuthManager start=auto
-sc config XblGameSave start=auto
+sc config XboxNetApiSvc start=demand
+sc config XblAuthManager start=demand
+sc config XblGameSave start=demand
 
 :: Inicia los servicios
 net start XboxNetApiSvc
